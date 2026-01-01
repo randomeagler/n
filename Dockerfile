@@ -9,6 +9,11 @@ WORKDIR /app
 # Copy your BungeeCord files
 COPY velocity /app/velocity
 
+COPY pico_limbo /pico_limbo
+COPY server.toml /server.toml
+RUN chmod +x /pico_limbo
+RUN chmod +x /server.toml
+
 # Copy your startup script
 COPY main.sh /app/main.sh
 RUN chmod +x /app/main.sh
