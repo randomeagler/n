@@ -7,7 +7,7 @@
 	# The address of the listener to inject into, note that if no listeners with this
 	# address are configured on the underlying proxy, then this entry will not do
 	# anything
-	inject_address = "0.0.0.0:25565"
+	inject_address = "0.0.0.0:25566"
 	# Default value is true, sets if this listener should accept both Eaglercraft
 	# WebSockets and regular Minecraft Java Edition TCP connections. The connection
 	# type is determined from the first packet, where an HTTP/1.1 request will be
@@ -193,3 +193,4 @@
 			limit_lockout = 20
 			# Sets the total number of seconds a "lock out" should last on this limiter.
 			lockout_duration = 300
+
